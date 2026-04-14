@@ -1,32 +1,240 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>대한재무대부중개</title>
 
-  <div class="title">🏢 사업자 정보</div>
+<style>
+body{
+  margin:0;
+  font-family:'Arial';
+  background: radial-gradient(circle at top,#0b1220,#05070f);
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:60px 20px;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+header h1{
+  margin:0;
+  font-size:34px;
+  letter-spacing:2px;
+}
+
+header p{
+  margin-top:10px;
+  opacity:0.8;
+  font-size:14px;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* CARD */
+.card{
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius:18px;
+  padding:25px;
+  margin:20px 0;
+}
+
+/* BADGE */
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  background:#3b82f6;
+  border-radius:20px;
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+/* TITLE */
+.title{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+/* BUTTON */
+button{
+  width:100%;
+  padding:15px;
+  margin-top:10px;
+  border:none;
+  border-radius:12px;
+  font-size:15px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+button:hover{
+  transform:scale(1.02);
+}
+
+.kakao{background:#FEE500;color:#000;}
+.phone{background:#2563eb;color:#fff;}
+.formbtn{background:#22c55e;color:#fff;}
+
+/* REVIEW */
+.review{
+  background: rgba(0,0,0,0.5);
+  border-left:4px solid #3b82f6;
+  padding:15px;
+  margin-top:12px;
+  border-radius:12px;
+}
+
+/* INPUT */
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-top:8px;
+  border-radius:10px;
+  border:none;
+  background:#0b1220;
+  color:#fff;
+}
+
+/* SMALL TEXT */
+.small{
+  font-size:12px;
+  opacity:0.6;
+  margin-top:10px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:40px 20px;
+  font-size:12px;
+  opacity:0.7;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>대한재무대부중개</h1>
+  <p>금융상담 실장 · 5년 경력 전문 컨설팅</p>
+</header>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="card">
+  <div class="badge">PREMIUM FINANCIAL CONSULTING</div>
+
+  <div class="title">🔥 신용 · 한도 · 승인 가능성 즉시 분석</div>
+
+  <p>
+    직장인 · 프리랜서 · 자영업자 · 신용관리 대상자까지<br>
+    1:1 맞춤 금융 컨설팅 제공
+  </p>
+
+  <button class="kakao"
+  onclick="window.location.href='https://open.kakao.com/o/slZX8lqi'">
+  카카오톡 1분 상담 시작
+  </button>
+
+  <button class="phone"
+  onclick="window.location.href='tel:01075162183'">
+  실장 직통 전화 연결
+  </button>
+</div>
+
+<!-- PROCESS -->
+<div class="card">
+  <div class="title">📊 상담 진행 프로세스</div>
+  <p>
+  1️⃣ 기본 상담 접수 → 2️⃣ 조건 분석 → 3️⃣ 가능 금융사 매칭 → 4️⃣ 한도 및 진행 안내
+  </p>
+</div>
+
+<!-- REAL CASES -->
+<div class="card">
+  <div class="title">💬 최근 상담 사례</div>
+
+  <div class="review">
+    <b>직장인 / 30대 초반</b><br>
+    기존 신용점수로 어려울 줄 알았지만 조건 맞는 금융사 매칭 후 당일 가능 여부 확인 완료
+  </div>
+
+  <div class="review">
+    <b>프리랜서 / 20대 후반</b><br>
+    소득 증빙이 부족했지만 대체 자료 기반으로 진행 가능한 상품 안내 받음
+  </div>
+
+  <div class="review">
+    <b>자영업자 / 40대</b><br>
+    기존 대출 구조 재정리 상담 후 월 상환 부담 감소 방향으로 컨설팅 진행
+  </div>
+
+  <div class="review">
+    <b>사회초년생 / 20대</b><br>
+    처음 금융 상담이라 걱정했지만 조건 설명이 명확해서 이해가 쉬웠음
+  </div>
+
+  <p class="small">※ 위 내용은 실제 상담 유형 기반 익명 사례입니다</p>
+</div>
+
+<!-- FORM -->
+<div class="card">
+  <div class="title">📩 온라인 상담 신청</div>
+
+  <input type="text" placeholder="이름">
+  <input type="text" placeholder="연락처">
+  <textarea rows="4" placeholder="직업 / 신용상태 / 필요금액 / 상담 요청 내용"></textarea>
+
+  <button class="formbtn"
+  onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeS_FfhuLZ6Sg6R7h4iFHsoppAWzX-MXkwNq7fFb3mjQmF1DA/viewform?usp=sharing'">
+  구글폼으로 상담 신청
+  </button>
+
+  <p class="small">※ 접수된 내용은 실장 직접 확인 후 순차적으로 안내됩니다</p>
+</div>
+
+<!-- COMPANY INFO -->
+<div class="card">
+  <div class="title">🏢 사업자 정보 및 안내</div>
 
   <p>
     사업자번호: <b>157-18-01940</b><br>
     대한재무대부중개<br>
-    금융상담 전문 컨설팅 서비스
+    금융상담 전문 컨설팅
   </p>
 
-  <p style="font-size:13px; opacity:0.7;">
-    본 서비스는 여신금융 관련 상담을 제공하며, 실제 대출 실행은 금융기관 정책에 따라 달라질 수 있습니다.
+  <p class="small">
+    본 서비스는 여신금융 관련 상담을 제공하며,<br>
+    실제 대출 실행은 금융기관 심사 기준에 따라 달라질 수 있습니다.
   </p>
 
   <hr style="border:0;border-top:1px solid rgba(255,255,255,0.1);margin:15px 0;">
 
-  <p style="font-size:13px;">
-    📄 <b>약관 및 안내</b>
+  <p class="small">
+    📄 여신거래 기본 약관 · 개인정보 처리방침 · 금융상품 안내
   </p>
-
-  <p style="font-size:12px; opacity:0.8;">
-    • 여신거래 기본 약관 안내<br>
-    • 개인정보 처리방침<br>
-    • 금융상품 소개 및 설명 의무 안내
-  </p>
-
-  <button class="phone"
-  onclick="alert('약관 페이지는 추후 별도 페이지로 연결 가능합니다')">
-  약관 안내 보기
-  </button>
 
 </div>
+
+</div>
+
+<div class="footer">
+© 2026 대한재무대부중개 · All Rights Reserved
+</div>
+
+</body>
+</html>
