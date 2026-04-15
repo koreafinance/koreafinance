@@ -1,183 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>대한재무대부중개</title>
+  <meta charset="UTF-8">
+  <title>코리아파이낸스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(135deg, #f8fafc, #eef2ff);
+      color: #111827;
+    }
 
-<style>
-body {
-  margin:0;
-  font-family:'Noto Sans KR', sans-serif;
-  background:#f4f6f9;
-  color:#222;
-}
+    body::before {
+      content: "";
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99,102,241,0.15), transparent);
+      top: -100px;
+      right: -100px;
+      filter: blur(80px);
+      z-index: -1;
+    }
 
-header {
-  background:#0f172a;
-  color:white;
-  padding:25px;
-  text-align:center;
-}
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-.logo {
-  font-size:28px;
-  font-weight:700;
-}
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-.sub {
-  font-size:13px;
-  color:#94a3b8;
-}
+    p.subtitle {
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
 
-.hero {
-  background:linear-gradient(135deg,#1e293b,#334155);
-  color:white;
-  padding:80px 20px;
-  text-align:center;
-}
+    .section {
+      margin-bottom: 60px;
+    }
 
-.hero h1 {
-  font-size:34px;
-}
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
 
-.hero p {
-  margin-top:15px;
-  line-height:1.7;
-}
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
 
-.section {
-  padding:60px 20px;
-  text-align:center;
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-.card {
-  background:white;
-  padding:30px;
-  margin:20px auto;
-  max-width:600px;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #6366f1;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
-.name {
-  font-size:24px;
-  font-weight:bold;
-  margin:10px 0;
-}
+    .review {
+      font-size: 14px;
+      color: #374151;
+    }
 
-.btn {
-  display:inline-block;
-  margin:10px;
-  padding:14px 26px;
-  border-radius:8px;
-  font-weight:bold;
-  text-decoration:none;
-}
+    .footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+      margin-top: 60px;
+    }
 
-.call { background:#1e293b; color:white; }
-.kakao { background:#fee500; color:#3c1e1e; }
-
-.review, .case {
-  text-align:left;
-  margin-top:15px;
-  font-size:15px;
-  line-height:1.6;
-}
-
-.footer {
-  background:#0f172a;
-  color:#94a3b8;
-  text-align:center;
-  padding:30px;
-  font-size:13px;
-}
-
-.terms {
-  text-align:left;
-  font-size:13px;
-  line-height:1.6;
-  color:#555;
-  max-width:700px;
-  margin:20px auto;
-}
-</style>
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">대한재무대부중개</div>
-  <div class="sub">KOREA FINANCE CONSULTING</div>
-</header>
+<div class="container">
 
-<div class="hero">
-  <h1>프리미엄 금융 컨설팅</h1>
-  <p>
-    고객 맞춤 금융 설계로<br>
-    가장 안전하고 합리적인 선택을 제공합니다
-  </p>
-</div>
-
-<div class="section">
-  <div class="card">
-    <div>전문 상담사</div>
-    <div class="name">박요셉</div>
-    <p>책임감 있는 1:1 상담으로 끝까지 함께합니다</p>
-
-    <a class="btn call" href="tel:01075162183">📞 010-7516-2183</a>
-    <a class="btn kakao" href="https://open.kakao.com/o/slZX8lqi">💬 카카오톡 상담</a>
+  <!-- 🔥 메인 -->
+  <div class="section">
+    <h1>코리아파이낸스</h1>
+    <p class="subtitle">사업자대출 · 정부지원자금 · 맞춤 금융 컨설팅</p>
   </div>
-</div>
 
-<div class="section">
-  <div class="card">
-    <h3>✔ 승인 사례</h3>
-    <div class="case">
-      • 직장인 신용대출 3,000만원 승인<br>
-      • 기대출 과다 고객 추가 대출 성공<br>
-      • 무직자 소액 대출 승인 사례 다수
+  <!-- 🔥 서비스 -->
+  <div class="section">
+    <h2>대출 상품</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>사업자 대출</h3>
+        <p>운영자금, 시설자금 등 다양한 금융 지원</p>
+      </div>
+
+      <div class="card">
+        <h3>정부지원자금</h3>
+        <p>저금리 정책자금 및 지원 프로그램 안내</p>
+      </div>
+
+      <div class="card">
+        <h3>신용 대출</h3>
+        <p>개인 및 사업자 맞춤 신용 대출 상품</p>
+      </div>
+
     </div>
   </div>
 
-  <div class="card">
-    <h3>✔ 실제 고객 후기</h3>
-    <div class="review">
-      “타 업체에서 거절됐는데 승인 받아서 정말 감사합니다.”<br><br>
-      “빠르고 친절하게 진행해주셔서 믿음이 갔습니다.”<br><br>
-      “설명도 자세하고 부담 없이 상담 받을 수 있었어요.”
+  <!-- 🔥 보증기관 연결 (핵심 추가) -->
+  <div class="section">
+    <h2>보증기관 안내</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>신용보증기금</h3>
+        <p>중소기업 신용보증 지원</p>
+        <a href="https://www.kodit.co.kr" class="btn" target="_blank">바로가기</a>
+      </div>
+
+      <div class="card">
+        <h3>기술보증기금</h3>
+        <p>기술 기반 기업 보증 지원</p>
+        <a href="https://www.kibo.or.kr" class="btn" target="_blank">바로가기</a>
+      </div>
+
+      <div class="card">
+        <h3>지역신용보증재단</h3>
+        <p>소상공인 및 자영업자 보증</p>
+        <a href="https://www.koreg.or.kr" class="btn" target="_blank">바로가기</a>
+      </div>
+
     </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="card">
-    <h3>✔ 서비스 특징</h3>
-    ✔ 과도한 조회 없이 안전 상담<br><br>
-    ✔ 비대면 빠른 진행 가능<br><br>
-    ✔ 맞춤형 금융 설계 제공<br><br>
-    ✔ 1:1 책임 상담 진행
-  </div>
-</div>
+  <!-- 🔥 후기 -->
+  <div class="section">
+    <h2>이용 후기</h2>
 
-<div class="section">
-  <div class="card">
-    <h3>대출 거래 약관</h3>
-    <div class="terms">
-      본 서비스는 고객의 신용 상태에 따라 대출 가능 여부 및 조건이 달라질 수 있습니다.<br><br>
-      과도한 대출은 개인 신용평점 하락의 원인이 될 수 있으며, 금융 거래에 불이익이 발생할 수 있습니다.<br><br>
-      계약 체결 전 상품 설명서 및 약관을 반드시 확인하시기 바랍니다.<br><br>
-      중개 수수료가 발생할 수 있으며, 이는 사전에 안내드립니다.
+    <div class="card-grid">
+
+      <div class="card review">✔ 승인 빠르고 상담 친절했습니다</div>
+      <div class="card review">✔ 타사보다 조건이 좋았습니다</div>
+      <div class="card review">✔ 정부지원자금 도움 많이 받았습니다</div>
+      <div class="card review">✔ 진행이 깔끔하고 신뢰감 있었어요</div>
+      <div class="card review">✔ 사업 운영에 큰 도움이 됐습니다</div>
+      <div class="card review">✔ 추천받고 이용했는데 만족합니다</div>
+
     </div>
   </div>
-</div>
 
-<div class="footer">
-  대한재무대부중개<br>
-  사업자등록번호: 693-11-02408<br>
-  © All Rights Reserved.
+  <!-- 🔥 CTA -->
+  <div class="section">
+    <h2>상담 신청</h2>
+    <p>지금 바로 맞춤 상담을 받아보세요</p>
+    <a href="#" class="btn">상담 신청하기</a>
+  </div>
+
+  <div class="footer">
+    © 코리아파이낸스
+  </div>
+
 </div>
 
 </body>
