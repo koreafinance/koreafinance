@@ -1,74 +1,184 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>대한재무대부중개</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Noto Sans KR', sans-serif;
-      background: #f5f7fa;
-      color: #222;
-      text-align: center;
-    }
-    .container {
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #555;
-    }
-    .card {
-      background: white;
-      margin: 40px auto;
-      padding: 30px;
-      max-width: 400px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-    .name {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #2c3e50;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background: #1a252f;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대한재무대부중개</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Noto Sans KR', sans-serif;
+  background:#f4f6f9;
+  color:#222;
+}
+
+header {
+  background:#0f172a;
+  color:white;
+  padding:25px;
+  text-align:center;
+}
+
+.logo {
+  font-size:28px;
+  font-weight:700;
+}
+
+.sub {
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.hero {
+  background:linear-gradient(135deg,#1e293b,#334155);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:34px;
+}
+
+.hero p {
+  margin-top:15px;
+  line-height:1.7;
+}
+
+.section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.card {
+  background:white;
+  padding:30px;
+  margin:20px auto;
+  max-width:600px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.name {
+  font-size:24px;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.btn {
+  display:inline-block;
+  margin:10px;
+  padding:14px 26px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.call { background:#1e293b; color:white; }
+.kakao { background:#fee500; color:#3c1e1e; }
+
+.review, .case {
+  text-align:left;
+  margin-top:15px;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.footer {
+  background:#0f172a;
+  color:#94a3b8;
+  text-align:center;
+  padding:30px;
+  font-size:13px;
+}
+
+.terms {
+  text-align:left;
+  font-size:13px;
+  line-height:1.6;
+  color:#555;
+  max-width:700px;
+  margin:20px auto;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>대한재무대부중개</h1>
-    <p>
-      신뢰를 바탕으로 고객 맞춤 금융 솔루션을 제공합니다.<br>
-      복잡한 금융, 더 쉽고 명확하게 안내해드립니다.
-    </p>
 
-    <div class="card">
-      <div>전문 상담</div>
-      <div class="name">박요셉</div>
-      <p>
-        고객 상황에 맞는 최적의 금융 방향을<br>
-        책임감 있게 안내해드립니다.
-      </p>
-      <a class="btn" href="tel:010-0000-0000">상담 문의</a>
+<header>
+  <div class="logo">대한재무대부중개</div>
+  <div class="sub">KOREA FINANCE CONSULTING</div>
+</header>
+
+<div class="hero">
+  <h1>프리미엄 금융 컨설팅</h1>
+  <p>
+    고객 맞춤 금융 설계로<br>
+    가장 안전하고 합리적인 선택을 제공합니다
+  </p>
+</div>
+
+<div class="section">
+  <div class="card">
+    <div>전문 상담사</div>
+    <div class="name">박요셉</div>
+    <p>책임감 있는 1:1 상담으로 끝까지 함께합니다</p>
+
+    <a class="btn call" href="tel:01075162183">📞 010-7516-2183</a>
+    <a class="btn kakao" href="https://open.kakao.com/o/slZX8lqi">💬 카카오톡 상담</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h3>✔ 승인 사례</h3>
+    <div class="case">
+      • 직장인 신용대출 3,000만원 승인<br>
+      • 기대출 과다 고객 추가 대출 성공<br>
+      • 무직자 소액 대출 승인 사례 다수
     </div>
   </div>
+
+  <div class="card">
+    <h3>✔ 실제 고객 후기</h3>
+    <div class="review">
+      “타 업체에서 거절됐는데 승인 받아서 정말 감사합니다.”<br><br>
+      “빠르고 친절하게 진행해주셔서 믿음이 갔습니다.”<br><br>
+      “설명도 자세하고 부담 없이 상담 받을 수 있었어요.”
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h3>✔ 서비스 특징</h3>
+    ✔ 과도한 조회 없이 안전 상담<br><br>
+    ✔ 비대면 빠른 진행 가능<br><br>
+    ✔ 맞춤형 금융 설계 제공<br><br>
+    ✔ 1:1 책임 상담 진행
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h3>대출 거래 약관</h3>
+    <div class="terms">
+      본 서비스는 고객의 신용 상태에 따라 대출 가능 여부 및 조건이 달라질 수 있습니다.<br><br>
+      과도한 대출은 개인 신용평점 하락의 원인이 될 수 있으며, 금융 거래에 불이익이 발생할 수 있습니다.<br><br>
+      계약 체결 전 상품 설명서 및 약관을 반드시 확인하시기 바랍니다.<br><br>
+      중개 수수료가 발생할 수 있으며, 이는 사전에 안내드립니다.
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  대한재무대부중개<br>
+  사업자등록번호: 693-11-02408<br>
+  © All Rights Reserved.
+</div>
+
 </body>
 </html>
