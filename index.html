@@ -1,188 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>코리아파이낸스</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Pretendard', sans-serif;
-      background: linear-gradient(135deg, #f8fafc, #eef2ff);
-      color: #111827;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body::before {
-      content: "";
-      position: fixed;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(99,102,241,0.15), transparent);
-      top: -100px;
-      right: -100px;
-      filter: blur(80px);
-      z-index: -1;
-    }
+<title>대한재무대부중개 | 신용대출·프리랜서·직장인 맞춤 금융상담</title>
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+<meta name="description" content="대한재무대부중개는 프리랜서, 직장인, 자영업자를 위한 맞춤 금융 상담 및 대출 중개 서비스를 제공합니다.">
+<meta name="keywords" content="대출, 신용대출, 프리랜서대출, 직장인대출, 정부보증, 기술보증기금, 신용보증기금, 대부중개">
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+<style>
 
-    p.subtitle {
-      color: #6b7280;
-      margin-bottom: 40px;
-    }
+body{
+margin:0;
+font-family: 'Noto Sans KR', sans-serif;
+background:#f4f6fb;
+color:#111;
+scroll-behavior:smooth;
+}
 
-    .section {
-      margin-bottom: 60px;
-    }
+/* HEADER */
+header{
+position:sticky;
+top:0;
+background:#0b1220;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 20px;
+z-index:999;
+}
 
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
+.logo{
+font-weight:800;
+font-size:18px;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
+nav a{
+color:white;
+margin-left:14px;
+font-size:13px;
+opacity:0.8;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+nav a:hover{opacity:1;}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      background: #6366f1;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      margin-top: 10px;
-      font-size: 14px;
-    }
+/* HERO */
+.hero{
+background:linear-gradient(135deg,#0b1220,#1e3a8a);
+color:white;
+text-align:center;
+padding:90px 20px;
+}
 
-    .review {
-      font-size: 14px;
-      color: #374151;
-    }
+.hero h1{font-size:38px;margin-bottom:10px;}
+.hero p{opacity:0.8;font-size:15px;}
 
-    .footer {
-      text-align: center;
-      color: #9ca3af;
-      font-size: 13px;
-      margin-top: 60px;
-    }
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:12px 16px;
+border-radius:10px;
+font-weight:700;
+margin-top:10px;
+}
 
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 28px;
-      }
-    }
-  </style>
+.green{background:#22c55e;color:white;}
+.yellow{background:#facc15;color:black;}
+
+/* CONTAINER */
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:12px;
+}
+
+.badge{
+display:inline-block;
+background:#e5e7eb;
+padding:4px 10px;
+border-radius:999px;
+font-size:12px;
+margin-right:5px;
+}
+
+/* FIXED BUTTON */
+.fixed{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#facc15;
+padding:14px 16px;
+border-radius:50px;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+z-index:999;
+}
+
+/* SECTION TITLE */
+h2{
+border-left:5px solid #2563eb;
+padding-left:10px;
+}
+
+/* FOOTER */
+footer{
+background:#0b1220;
+color:#aaa;
+text-align:center;
+padding:25px;
+font-size:12px;
+}
+
+/* TOGGLE */
+details{
+background:#fff;
+padding:12px;
+border-radius:10px;
+margin-top:10px;
+}
+
+summary{
+cursor:pointer;
+font-weight:600;
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+<div class="logo">대한재무대부중개</div>
+<nav>
+<a href="#service">서비스</a>
+<a href="#cases">사례</a>
+<a href="#info">기관</a>
+<a href="#contact">상담</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>신뢰 기반 금융 컨설팅</h1>
+<p>프리랜서 · 직장인 · 자영업자 맞춤 대출 중개 서비스</p>
+<a class="btn green" href="https://open.kakao.com/o/slZX8Lqi">카카오톡 상담</a>
+</div>
+
 <div class="container">
 
-  <!-- 🔥 메인 -->
-  <div class="section">
-    <h1>코리아파이낸스</h1>
-    <p class="subtitle">사업자대출 · 정부지원자금 · 맞춤 금융 컨설팅</p>
-  </div>
+<!-- COMPANY -->
+<div class="card">
+<h2>회사 정보</h2>
+<p>
+상호: 대한재무대부중개<br>
+사업자번호: 157-18-01940<br>
+대표번호: 010-7516-2183 (변동 가능)
+</p>
+</div>
 
-  <!-- 🔥 서비스 -->
-  <div class="section">
-    <h2>대출 상품</h2>
+<!-- SERVICE -->
+<div class="card" id="service">
+<h2>핵심 서비스</h2>
 
-    <div class="card-grid">
-
-      <div class="card">
-        <h3>사업자 대출</h3>
-        <p>운영자금, 시설자금 등 다양한 금융 지원</p>
-      </div>
-
-      <div class="card">
-        <h3>정부지원자금</h3>
-        <p>저금리 정책자금 및 지원 프로그램 안내</p>
-      </div>
-
-      <div class="card">
-        <h3>신용 대출</h3>
-        <p>개인 및 사업자 맞춤 신용 대출 상품</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 🔥 보증기관 연결 (핵심 추가) -->
-  <div class="section">
-    <h2>보증기관 안내</h2>
-
-    <div class="card-grid">
-
-      <div class="card">
-        <h3>신용보증기금</h3>
-        <p>중소기업 신용보증 지원</p>
-        <a href="https://www.kodit.co.kr" class="btn" target="_blank">바로가기</a>
-      </div>
-
-      <div class="card">
-        <h3>기술보증기금</h3>
-        <p>기술 기반 기업 보증 지원</p>
-        <a href="https://www.kibo.or.kr" class="btn" target="_blank">바로가기</a>
-      </div>
-
-      <div class="card">
-        <h3>지역신용보증재단</h3>
-        <p>소상공인 및 자영업자 보증</p>
-        <a href="https://www.koreg.or.kr" class="btn" target="_blank">바로가기</a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 🔥 후기 -->
-  <div class="section">
-    <h2>이용 후기</h2>
-
-    <div class="card-grid">
-
-      <div class="card review">✔ 승인 빠르고 상담 친절했습니다</div>
-      <div class="card review">✔ 타사보다 조건이 좋았습니다</div>
-      <div class="card review">✔ 정부지원자금 도움 많이 받았습니다</div>
-      <div class="card review">✔ 진행이 깔끔하고 신뢰감 있었어요</div>
-      <div class="card review">✔ 사업 운영에 큰 도움이 됐습니다</div>
-      <div class="card review">✔ 추천받고 이용했는데 만족합니다</div>
-
-    </div>
-  </div>
-
-  <!-- 🔥 CTA -->
-  <div class="section">
-    <h2>상담 신청</h2>
-    <p>지금 바로 맞춤 상담을 받아보세요</p>
-    <a href="#" class="btn">상담 신청하기</a>
-  </div>
-
-  <div class="footer">
-    © 코리아파이낸스
-  </div>
+<div class="grid">
+<div class="card">프리랜서 맞춤 대출</div>
+<div class="card">직장인 신용대출</div>
+<div class="card">정부보증 연계</div>
+<div class="card">부채 구조 개선</div>
+</div>
 
 </div>
+
+<!-- INSTITUTION -->
+<div class="card" id="info">
+<h2>기관 연계 금융</h2>
+
+<ul>
+<li>:contentReference[oaicite:0]{index=0}</li>
+<li>:contentReference[oaicite:1]{index=1}</li>
+</ul>
+
+</div>
+
+<!-- CASES -->
+<div class="card" id="cases">
+<h2>실제 성공 사례</h2>
+
+<p>프리랜서 및 직장인 중심 실제 승인 사례 기반 상담 진행</p>
+
+<div class="grid">
+<div class="card">프리랜서 A → 2,000만원 승인</div>
+<div class="card">직장인 B → 금리 인하 성공</div>
+<div class="card">자영업자 C → 운영자금 확보</div>
+<div class="card">프리랜서 D → 첫 대출 승인</div>
+<div class="card">직장인 E → 한도 증액 성공</div>
+<div class="card">자영업자 F → 부채 통합</div>
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="card" id="contact">
+<h2>빠른 상담</h2>
+
+<p>카카오톡으로 즉시 상담 가능합니다</p>
+
+<a class="btn yellow" href="https://open.kakao.com/o/slZX8Lqi">
+카카오톡 상담 바로가기
+</a>
+
+<details>
+<summary>대부금융법 안내</summary>
+대출 조건은 개인 신용 및 상황에 따라 달라질 수 있으며, 관련 법규를 준수합니다.
+</details>
+
+<details>
+<summary>여신거래기본약관</summary>
+금리 및 조건은 금융기관 기준에 따라 적용됩니다.
+</details>
+
+</div>
+
+</div>
+
+<!-- FLOAT BUTTON -->
+<a class="fixed" href="https://open.kakao.com/o/slZX8Lqi">💬 상담</a>
+
+<footer>
+대한재무대부중개 | 모든 금융 상담은 개인 조건에 따라 달라질 수 있음
+</footer>
 
 </body>
 </html>
