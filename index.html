@@ -1,294 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>대한재무대부중개</title>
-
-<style>
-body{
-  margin:0;
-  font-family:'Arial';
-  background: linear-gradient(135deg,#0b1b3a,#081024,#0f2a4d);
-  color:#fff;
-}
-
-/* HEADER */
-header{
-  text-align:center;
-  padding:70px 20px;
-  background: linear-gradient(135deg,#0f172a,#1e3a8a);
-  border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-header h1{
-  margin:0;
-  font-size:36px;
-  letter-spacing:2px;
-}
-
-header p{
-  margin-top:10px;
-  opacity:0.85;
-  font-size:14px;
-}
-
-/* CONTAINER */
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:20px;
-}
-
-/* CARD */
-.card{
-  background: rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(14px);
-  border-radius:18px;
-  padding:25px;
-  margin:20px 0;
-  box-shadow:0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* TITLE */
-.title{
-  font-size:21px;
-  font-weight:bold;
-  margin-bottom:12px;
-}
-
-/* BADGE */
-.badge{
-  display:inline-block;
-  padding:6px 12px;
-  background:#2563eb;
-  border-radius:20px;
-  font-size:12px;
-  margin-bottom:10px;
-}
-
-/* BUTTONS */
-button{
-  width:100%;
-  padding:15px;
-  margin-top:10px;
-  border:none;
-  border-radius:12px;
-  font-size:15px;
-  cursor:pointer;
-  font-weight:bold;
-  transition:0.2s;
-}
-
-button:hover{
-  transform:scale(1.02);
-}
-
-.phone{background:#1d4ed8;color:#fff;}
-.kakao{background:#FEE500;color:#000;}
-.formbtn{background:#22c55e;color:#fff;}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-
-@media(max-width:800px){
-  .grid{grid-template-columns:1fr;}
-}
-
-/* REVIEW */
-.review{
-  background: rgba(0,0,0,0.4);
-  border-left:4px solid #3b82f6;
-  padding:15px;
-  margin-top:10px;
-  border-radius:12px;
-}
-
-/* INPUT */
-input,textarea{
-  width:100%;
-  padding:12px;
-  margin-top:8px;
-  border-radius:10px;
-  border:none;
-  background:#0b1220;
-  color:#fff;
-}
-
-/* LINK */
-.linkbtn{
-  display:block;
-  text-align:center;
-  padding:12px;
-  margin-top:10px;
-  border-radius:10px;
-  background:#111827;
-  border:1px solid rgba(255,255,255,0.1);
-  color:#fff;
-  text-decoration:none;
-}
-
-.small{
-  font-size:12px;
-  opacity:0.6;
-  margin-top:10px;
-}
-
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:40px 20px;
-  font-size:12px;
-  opacity:0.6;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <title>대한재무대부중개</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      text-align: center;
+    }
+    .container {
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .card {
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #2c3e50;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #1a252f;
+    }
+  </style>
 </head>
 
 <body>
-
-<header>
-  <h1>대한재무대부중개</h1>
-  <p>정부지원자금 · 보증기관 전문 금융 컨설팅</p>
-</header>
-
-<div class="container">
-
-<!-- HERO -->
-<div class="card">
-  <div class="badge">GOVERNMENT FUNDING SPECIALIST</div>
-
-  <div class="title">🔥 보증재단 · 기술보증기금 기반 자금 컨설팅</div>
-
-  <p>
-    개인사업자 · 소상공인 · 스타트업 대상<br>
-    정부지원 금융상품 맞춤 컨설팅 진행
-  </p>
-
-  <button class="phone"
-  onclick="window.location.href='tel:01075162183'">
-  📞 즉시 전화 상담 (박요셉 실장)
-  </button>
-</div>
-
-<!-- 기관 -->
-<div class="card">
-  <div class="title">🏛 정부 보증기관 안내</div>
-
-  <p><b>신용보증재단</b><br>
-  소상공인·자영업자 대상 보증을 통해 금융기관 대출을 지원</p>
-
-  <a class="linkbtn" href="https://www.koreg.or.kr" target="_blank">
-    신용보증재단 바로가기
-  </a>
-
-  <p style="margin-top:15px;"><b>기술보증기금</b><br>
-  기술 기반 기업 및 스타트업 대상 보증 및 성장자금 지원</p>
-
-  <a class="linkbtn" href="https://www.kibo.or.kr" target="_blank">
-    기술보증기금 바로가기
-  </a>
-
-  <p class="small">
-  ※ 정부 공공기관으로 심사 기준에 따라 지원 여부가 결정됩니다
-  </p>
-</div>
-
-<!-- 상담사 -->
-<div class="card">
-  <div class="title">👨‍💼 상담팀</div>
-
-  <div class="grid">
+  <div class="container">
+    <h1>대한재무대부중개</h1>
+    <p>
+      신뢰를 바탕으로 고객 맞춤 금융 솔루션을 제공합니다.<br>
+      복잡한 금융, 더 쉽고 명확하게 안내해드립니다.
+    </p>
 
     <div class="card">
-      <b>박요셉 실장 (5년 경력)</b><br>
-      📞 010-7516-2183
-
-      <button class="phone"
-      onclick="window.location.href='tel:01075162183'">
-      전화 상담
-      </button>
-
-      <button class="kakao"
-      onclick="window.location.href='https://open.kakao.com/o/slZX8lqi'">
-      카카오 상담 (VIP)
-      </button>
+      <div>전문 상담</div>
+      <div class="name">박요셉</div>
+      <p>
+        고객 상황에 맞는 최적의 금융 방향을<br>
+        책임감 있게 안내해드립니다.
+      </p>
+      <a class="btn" href="tel:010-0000-0000">상담 문의</a>
     </div>
-
-    <div class="card">
-      <b>이선우 부장</b><br>
-      정부지원자금 전문<br>
-      📞 010-3976-6498
-
-      <button class="phone"
-      onclick="window.location.href='tel:01039766498'">
-      전화 상담
-      </button>
-    </div>
-
   </div>
-</div>
-
-<!-- 사례 -->
-<div class="card">
-  <div class="title">💬 실제 상담 사례</div>
-
-  <div class="review">
-    소상공인 / 음식점 운영<br>
-    신용보증재단 연계로 운전자금 승인 및 자금 확보
-  </div>
-
-  <div class="review">
-    스타트업 / IT기업<br>
-    기술보증기금 기반 평가 후 초기 운영자금 확보
-  </div>
-
-  <div class="review">
-    자영업자 / 40대<br>
-    기존 대출 구조 개선 및 월 부담 감소 컨설팅 진행
-  </div>
-
-  <p class="small">※ 상담 유형 기반 익명 사례</p>
-</div>
-
-<!-- 신청 -->
-<div class="card">
-  <div class="title">📩 상담 신청</div>
-
-  <input type="text" placeholder="이름 / 사업자명">
-  <input type="text" placeholder="연락처">
-  <textarea rows="4" placeholder="사업내용 / 필요자금 / 상담요청"></textarea>
-
-  <button class="formbtn"
-  onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeS_FfhuLZ6Sg6R7h4iFHsoppAWzX-MXkwNq7fFb3mjQmF1DA/viewform?usp=sharing'">
-  구글폼 상담 신청
-  </button>
-</div>
-
-<!-- 사업자 -->
-<div class="card">
-  <div class="title">🏢 사업자 정보</div>
-
-  <p>
-  사업자번호: <b>157-18-01940</b><br>
-  대한재무대부중개
-  </p>
-
-  <p class="small">
-  본 서비스는 정부지원자금 및 금융 컨설팅 상담 서비스이며,<br>
-  실제 승인 여부는 금융기관 기준에 따릅니다.
-  </p>
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 대한재무대부중개 · Financial Consulting Service
-</div>
-
 </body>
 </html>
