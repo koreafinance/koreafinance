@@ -5,142 +5,165 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>대한재무대부중개 | 신용대출·프리랜서·직장인 맞춤 금융상담</title>
+<title>대한재무대부중개 | 금융 상담 서비스</title>
 
-<meta name="description" content="대한재무대부중개는 프리랜서, 직장인, 자영업자를 위한 맞춤 금융 상담 및 대출 중개 서비스를 제공합니다.">
-<meta name="keywords" content="대출, 신용대출, 프리랜서대출, 직장인대출, 정부보증, 기술보증기금, 신용보증기금, 대부중개">
+<meta name="description" content="프리랜서, 직장인, 자영업자를 위한 맞춤 금융 상담 및 대출 중개 서비스">
+<meta name="keywords" content="대출, 신용대출, 프리랜서, 직장인, 자영업자, 금융상담">
 
 <style>
 
 body{
 margin:0;
-font-family: 'Noto Sans KR', sans-serif;
-background:#f4f6fb;
+font-family: "Noto Sans KR", sans-serif;
+background:#f6f8fb;
 color:#111;
-scroll-behavior:smooth;
 }
 
 /* HEADER */
 header{
-position:sticky;
-top:0;
-background:#0b1220;
+background:#0a1f44;
 color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:14px 20px;
+padding:16px 22px;
+position:sticky;
+top:0;
 z-index:999;
 }
 
 .logo{
 font-weight:800;
-font-size:18px;
+letter-spacing:-0.5px;
+font-size:17px;
 }
 
 nav a{
 color:white;
-margin-left:14px;
+margin-left:16px;
 font-size:13px;
-opacity:0.8;
+opacity:0.85;
+text-decoration:none;
 }
 
-nav a:hover{opacity:1;}
+nav a:hover{
+opacity:1;
+}
 
 /* HERO */
 .hero{
-background:linear-gradient(135deg,#0b1220,#1e3a8a);
+background:#0a1f44;
 color:white;
 text-align:center;
-padding:90px 20px;
+padding:95px 20px;
 }
 
-.hero h1{font-size:38px;margin-bottom:10px;}
-.hero p{opacity:0.8;font-size:15px;}
+.hero h1{
+font-size:34px;
+font-weight:800;
+margin-bottom:10px;
+}
 
-/* BUTTON */
+.hero p{
+opacity:0.75;
+font-size:14px;
+}
+
+/* BUTTONS */
 .btn{
 display:inline-block;
-padding:12px 16px;
-border-radius:10px;
-font-weight:700;
-margin-top:10px;
+padding:11px 15px;
+border-radius:6px;
+font-weight:600;
+text-decoration:none;
+margin:6px;
 }
 
-.green{background:#22c55e;color:white;}
-.yellow{background:#facc15;color:black;}
+.btn-primary{
+background:white;
+color:#0a1f44;
+}
+
+.btn-outline{
+border:1px solid white;
+color:white;
+}
 
 /* CONTAINER */
 .container{
-max-width:1100px;
+max-width:1050px;
 margin:auto;
-padding:20px;
+padding:22px;
 }
 
 /* CARD */
 .card{
 background:white;
-padding:20px;
-margin:15px 0;
-border-radius:14px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
+border:1px solid #e6eaf0;
+border-radius:10px;
+padding:18px;
+margin:12px 0;
+box-shadow:none;
+}
+
+/* TITLE */
+h2{
+font-size:17px;
+border-left:3px solid #0a1f44;
+padding-left:10px;
+margin-bottom:12px;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:12px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:10px;
 }
 
+/* BADGE */
 .badge{
 display:inline-block;
-background:#e5e7eb;
-padding:4px 10px;
+background:#eef2f7;
+padding:4px 9px;
 border-radius:999px;
-font-size:12px;
-margin-right:5px;
+font-size:11px;
+margin-right:4px;
+}
+
+/* PROFILE BOX */
+.profile{
+border:1px solid #dfe6ee;
+padding:18px;
+border-radius:10px;
 }
 
 /* FIXED BUTTON */
 .fixed{
 position:fixed;
-bottom:20px;
-right:20px;
-background:#facc15;
-padding:14px 16px;
+bottom:18px;
+right:18px;
+background:#0a1f44;
+color:white;
+padding:13px 15px;
 border-radius:50px;
-font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-z-index:999;
-}
-
-/* SECTION TITLE */
-h2{
-border-left:5px solid #2563eb;
-padding-left:10px;
+font-size:13px;
+font-weight:600;
 }
 
 /* FOOTER */
 footer{
-background:#0b1220;
-color:#aaa;
+background:#0a1f44;
+color:#b9c2d0;
 text-align:center;
-padding:25px;
+padding:28px;
 font-size:12px;
+margin-top:30px;
 }
 
-/* TOGGLE */
-details{
-background:#fff;
-padding:12px;
-border-radius:10px;
-margin-top:10px;
-}
-
-summary{
+small{
 cursor:pointer;
-font-weight:600;
+color:#9bb3d1;
 }
 
 </style>
@@ -149,6 +172,7 @@ font-weight:600;
 
 <body>
 
+<!-- HEADER -->
 <header>
 <div class="logo">대한재무대부중개</div>
 <nav>
@@ -159,94 +183,114 @@ font-weight:600;
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>신뢰 기반 금융 컨설팅</h1>
-<p>프리랜서 · 직장인 · 자영업자 맞춤 대출 중개 서비스</p>
-<a class="btn green" href="https://open.kakao.com/o/slZX8Lqi">카카오톡 상담</a>
+<h1>신뢰 기반 금융 상담 서비스</h1>
+<p>프리랜서 · 직장인 · 자영업자 맞춤 금융 컨설팅</p>
+
+<a class="btn btn-primary" href="https://open.kakao.com/o/slZX8lqi">카카오톡 상담</a>
+<a class="btn btn-outline" href="tel:01075162183">전화 상담</a>
 </div>
 
 <div class="container">
 
-<!-- COMPANY -->
-<div class="card">
-<h2>회사 정보</h2>
+<!-- PROFILE -->
+<div class="card profile">
+<h2>전문 상담 담당자</h2>
+
 <p>
-상호: 대한재무대부중개<br>
-사업자번호: 157-18-01940<br>
-대표번호: 010-7516-2183 (변동 가능)
+<b>박요셉 실장</b><br>
+농협 본사 대출영업부 출신 금융 상담 전문가
 </p>
+
+<p>
+대표번호: 010-7516-2183
+</p>
+
+<a class="btn btn-outline" href="tel:01075162183">전화 연결</a>
+<a class="btn btn-primary" href="https://open.kakao.com/o/slZX8lqi">카카오 상담</a>
 </div>
 
 <!-- SERVICE -->
 <div class="card" id="service">
-<h2>핵심 서비스</h2>
+<h2>주요 금융 서비스</h2>
 
 <div class="grid">
-<div class="card">프리랜서 맞춤 대출</div>
-<div class="card">직장인 신용대출</div>
-<div class="card">정부보증 연계</div>
-<div class="card">부채 구조 개선</div>
+<div class="card">프리랜서 소득 기반 상담</div>
+<div class="card">직장인 신용대출 컨설팅</div>
+<div class="card">자영업자 운영자금 지원</div>
+<div class="card">부채 구조 개선 상담</div>
 </div>
 
 </div>
 
 <!-- INSTITUTION -->
 <div class="card" id="info">
-<h2>기관 연계 금융</h2>
+<h2>기관 연계 금융 안내</h2>
+
+<p>
+<span class="badge">정책금융</span>
+<span class="badge">보증지원</span>
+<span class="badge">신용기반</span>
+</p>
 
 <ul>
-<li>:contentReference[oaicite:0]{index=0}</li>
-<li>:contentReference[oaicite:1]{index=1}</li>
+<li>:contentReference[oaicite:0]{index=0} : 기술 및 사업 보증 지원</li>
+<li>:contentReference[oaicite:1]{index=1} : 중소기업 및 개인 신용 보증</li>
 </ul>
 
 </div>
 
 <!-- CASES -->
 <div class="card" id="cases">
-<h2>실제 성공 사례</h2>
+<h2>상담 진행 사례</h2>
 
-<p>프리랜서 및 직장인 중심 실제 승인 사례 기반 상담 진행</p>
+<div class="card">
+프리랜서 고객은 초기 소득 증빙이 부족하여 일반 금융권에서 거절된 상태였으나,
+소득 흐름 분석 및 보증 연계 구조 설계를 통해 2,000만원 한도 승인 완료.
+</div>
 
-<div class="grid">
-<div class="card">프리랜서 A → 2,000만원 승인</div>
-<div class="card">직장인 B → 금리 인하 성공</div>
-<div class="card">자영업자 C → 운영자금 확보</div>
-<div class="card">프리랜서 D → 첫 대출 승인</div>
-<div class="card">직장인 E → 한도 증액 성공</div>
-<div class="card">자영업자 F → 부채 통합</div>
+<div class="card">
+직장인 고객은 기존 고금리 대출로 인해 월 부담이 높은 상태였으며,
+채무 구조 재설계를 통해 금리 절감 및 월 상환액 감소 진행.
+</div>
+
+<div class="card">
+자영업 고객은 매출 변동으로 운영자금이 부족한 상황이었으나,
+정책자금 및 보증상품 연계를 통해 긴급 운영자금 확보 성공.
 </div>
 
 </div>
 
 <!-- CONTACT -->
 <div class="card" id="contact">
-<h2>빠른 상담</h2>
+<h2>상담 안내</h2>
 
-<p>카카오톡으로 즉시 상담 가능합니다</p>
+<p>
+상담은 카카오톡 또는 전화로 진행됩니다.<br>
+신용 상태 및 조건에 따라 결과는 달라질 수 있습니다.
+</p>
 
-<a class="btn yellow" href="https://open.kakao.com/o/slZX8Lqi">
-카카오톡 상담 바로가기
-</a>
-
-<details>
-<summary>대부금융법 안내</summary>
-대출 조건은 개인 신용 및 상황에 따라 달라질 수 있으며, 관련 법규를 준수합니다.
-</details>
-
-<details>
-<summary>여신거래기본약관</summary>
-금리 및 조건은 금융기관 기준에 따라 적용됩니다.
-</details>
+<a class="btn btn-primary" href="https://open.kakao.com/o/slZX8lqi">카카오 상담</a>
+<a class="btn btn-outline" href="tel:01075162183">전화 상담</a>
 
 </div>
 
 </div>
 
-<!-- FLOAT BUTTON -->
-<a class="fixed" href="https://open.kakao.com/o/slZX8Lqi">💬 상담</a>
+<!-- FLOAT -->
+<a class="fixed" href="https://open.kakao.com/o/slZX8lqi">상담</a>
 
+<!-- FOOTER -->
 <footer>
-대한재무대부중개 | 모든 금융 상담은 개인 조건에 따라 달라질 수 있음
+
+<p>사업자번호: 157-18-01940</p>
+<p>대한재무대부중개 | 금융상품은 개인 조건에 따라 결과가 달라질 수 있습니다</p>
+
+<small onclick="alert('대부업 관련 법령에 따라 계약 전 조건을 반드시 확인하세요.')">
+대부금융법 안내
+</small>
+
 </footer>
 
 </body>
