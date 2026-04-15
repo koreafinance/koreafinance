@@ -5,33 +5,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>대한재무대부중개</title>
+<title>대한재무대부중개 | 금융 포털 서비스</title>
 
 <style>
 
 body{
 margin:0;
 font-family:"Noto Sans KR", sans-serif;
-background:#f3f6fb;
+background:#eef2f7;
 color:#111;
 }
 
 /* TOP BAR */
+.topbar{
+background:#0a1f44;
+color:white;
+padding:10px 20px;
+font-size:12px;
+display:flex;
+justify-content:space-between;
+}
+
+/* HEADER */
 header{
 background:#0a1f44;
 color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 22px;
-position:sticky;
-top:0;
-z-index:999;
+padding:16px 22px;
 }
 
 .logo{
 font-weight:900;
-letter-spacing:-0.5px;
+font-size:18px;
 }
 
 nav a{
@@ -42,32 +49,25 @@ opacity:0.85;
 text-decoration:none;
 }
 
-/* HERO */
+/* HERO STRIP */
 .hero{
 background:linear-gradient(135deg,#0a1f44,#102a5c);
 color:white;
-padding:70px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
-.hero h1{
-font-size:34px;
-margin-bottom:8px;
-}
-
-.hero p{
-opacity:0.75;
-font-size:14px;
-}
+.hero h1{margin:0;font-size:32px;}
+.hero p{opacity:0.75;font-size:13px;}
 
 /* CTA */
 .btn{
 display:inline-block;
-padding:12px 16px;
+padding:12px 15px;
 border-radius:10px;
 font-weight:800;
-text-decoration:none;
 margin:6px;
+text-decoration:none;
 }
 
 .kakao{
@@ -80,7 +80,7 @@ background:#22c55e;
 color:white;
 }
 
-/* LAYOUT (핵심) */
+/* LAYOUT */
 .wrap{
 max-width:1200px;
 margin:auto;
@@ -94,11 +94,11 @@ gap:15px;
 width:20%;
 }
 
-.box{
+.menu{
 background:white;
-border:1px solid #e6eaf0;
 border-radius:12px;
 padding:14px;
+border:1px solid #e6eaf0;
 margin-bottom:12px;
 font-size:13px;
 }
@@ -113,7 +113,7 @@ width:60%;
 width:20%;
 }
 
-.sidecall{
+.side{
 background:#0a1f44;
 color:white;
 padding:16px;
@@ -122,18 +122,18 @@ position:sticky;
 top:90px;
 }
 
-.sidecall a{
+.side a{
 display:block;
 margin-top:10px;
-text-align:center;
 padding:10px;
 border-radius:8px;
+text-align:center;
 font-weight:800;
 text-decoration:none;
 }
 
-.sidecall .kakao{background:#f7c600;color:#111;}
-.sidecall .call{background:#22c55e;color:white;}
+.side .kakao{background:#f7c600;color:#111;}
+.side .call{background:#22c55e;color:white;}
 
 /* CARD */
 .card{
@@ -158,6 +158,15 @@ grid-template-columns:repeat(2,1fr);
 gap:10px;
 }
 
+/* NOTICE */
+.notice{
+background:#fff7d6;
+border:1px solid #f1d97a;
+padding:12px;
+border-radius:10px;
+font-size:13px;
+}
+
 /* FOOTER */
 footer{
 background:#0a1f44;
@@ -172,7 +181,7 @@ margin-top:30px;
 @media(max-width:900px){
 .wrap{flex-direction:column;}
 .left,.center,.right{width:100%;}
-.sidecall{position:relative;top:auto;}
+.side{position:relative;top:auto;}
 }
 
 </style>
@@ -181,19 +190,24 @@ margin-top:30px;
 
 <body>
 
+<div class="topbar">
+<div>금융 상담 서비스 | 평일 09:00 ~ 20:00</div>
+<div>대표번호: 010-7516-2183</div>
+</div>
+
 <header>
 <div class="logo">대한재무대부중개</div>
 <nav>
-<a href="#">서비스</a>
-<a href="#">기관</a>
-<a href="#">사례</a>
-<a href="#">상담</a>
+<a href="#">대출상품</a>
+<a href="#">기관연계</a>
+<a href="#">상담사례</a>
+<a href="#">고객센터</a>
 </nav>
 </header>
 
 <div class="hero">
-<h1>신뢰 기반 금융 상담 서비스</h1>
-<p>프리랜서 · 직장인 · 자영업자 맞춤 금융 컨설팅</p>
+<h1>맞춤 금융 상담 서비스</h1>
+<p>프리랜서 · 직장인 · 자영업자 금융 컨설팅</p>
 
 <a class="btn kakao" href="https://open.kakao.com/o/slZX8lqi">카카오 상담</a>
 <a class="btn call" href="tel:01075162183">전화 상담</a>
@@ -204,7 +218,7 @@ margin-top:30px;
 <!-- LEFT -->
 <div class="left">
 
-<div class="box">
+<div class="menu">
 <b>빠른 메뉴</b><br><br>
 신용대출<br>
 프리랜서 상담<br>
@@ -212,9 +226,11 @@ margin-top:30px;
 부채관리
 </div>
 
-<div class="box">
-<b>상담시간</b><br><br>
-09:00 ~ 20:00
+<div class="menu">
+<b>공지사항</b><br><br>
+금리 변동 안내<br>
+신규 상담 증가<br>
+심사 기준 업데이트
 </div>
 
 </div>
@@ -229,33 +245,44 @@ margin-top:30px;
 📞 010-7516-2183
 </div>
 
+<div class="notice">
+※ 금융상품은 개인 신용 상태 및 금융기관 기준에 따라 결과가 달라질 수 있습니다.
+</div>
+
 <div class="card">
-<h2>주요 금융 서비스</h2>
+<h2>금융 서비스</h2>
 <div class="grid">
-<div class="card">프리랜서 대출</div>
+<div class="card">프리랜서 소득 분석</div>
 <div class="card">직장인 신용대출</div>
-<div class="card">자영업자 자금</div>
+<div class="card">자영업자 자금지원</div>
 <div class="card">부채 구조 개선</div>
 </div>
 </div>
 
 <div class="card">
+<h2>상담 진행 프로세스</h2>
+1. 상담 접수<br>
+2. 신용/소득 분석<br>
+3. 금융상품 매칭<br>
+4. 기관 연계 검토<br>
+5. 승인 및 실행
+</div>
+
+<div class="card">
 <h2>실제 상담 사례</h2>
-프리랜서 고객 → 소득 부족 → 구조 설계 → 2,000만원 승인<br><br>
-직장인 고객 → 고금리 → 재구조 → 월 부담 40% 감소<br><br>
-자영업 고객 → 운영자금 → 정책자금 연계 → 승인 성공
+프리랜서 → 소득 부족 → 구조 설계 → 2,000만원 승인<br><br>
+직장인 → 고금리 → 재구조 → 월 부담 40% 감소<br><br>
+자영업자 → 운영자금 → 정책자금 연계 → 승인 성공
 </div>
 
 <div class="card">
 <h2>기관 연계 금융</h2>
 
-<a href="https://www.kibo.or.kr" target="_blank">
-기술보증기금
-</a> : 기술 및 사업 보증 지원<br><br>
+<a href="https://www.kibo.or.kr" target="_blank">기술보증기금</a><br>
+→ 기술/사업 보증 지원<br><br>
 
-<a href="https://www.kodit.co.kr" target="_blank">
-신용보증기금
-</a> : 개인 및 기업 신용 보증 지원
+<a href="https://www.kodit.co.kr" target="_blank">신용보증기금</a><br>
+→ 개인/기업 신용 보증 지원
 
 </div>
 
@@ -264,7 +291,7 @@ margin-top:30px;
 <!-- RIGHT -->
 <div class="right">
 
-<div class="sidecall">
+<div class="side">
 <b>빠른 상담</b><br><br>
 박요셉 실장
 
@@ -279,7 +306,7 @@ margin-top:30px;
 
 <footer>
 사업자번호: 157-18-01940<br>
-대한재무대부중개 | 금융 결과는 개인 조건에 따라 다를 수 있습니다
+대한재무대부중개 | 금융 결과는 개인 조건에 따라 달라질 수 있습니다
 </footer>
 
 </body>
